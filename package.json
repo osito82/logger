@@ -1,0 +1,27 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "It is just an console log extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osito82/logger.git"
+  },
+  "keywords": [
+    "logger",
+    "log",
+    "console"
+  ],
+  "author": "Guillermo Salazar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osito82/logger/issues"
+  },
+  "homepage": "https://github.com/osito82/logger#readme",
+  "devDependencies": {
+    "eslint": "^8.18.0"
+  }
+}
