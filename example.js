@@ -1,35 +1,28 @@
 //const log = require("./functions");
 //import {log} =
-import * as log from "./functions.js";
-
+//import { lowerCase } from "lodash";
+import * as logger from "./functions.js";
 import {
   objectPerson,
   stringExample,
   arrayNumbers,
   arrayStrings
 } from "./mockData.js";
-//let memo= null
 
-// var configObj = {
-//   array: "simple"
-// }
-
-var conf_R = {
+//CONFIGURATION OBJECT
+const confR_obj = {
     array: "simple"
 }
 
-log.configR(conf_R);
+const log = new logger.R(confR_obj);
 
+
+log.name='s'
+log.R('hola')
 log.R();
-log.R("perro");
 log.R(arrayNumbers);
 log.R(arrayStrings);
-//log.R(memo);
 log.R(stringExample, stringExample);
-
 log.R("hola");
 
-//log.R(arrayAnimals);
-//log.R(["a"], ["b"], { hola: 1 });
 
-//log.R(objectPerson, arrayAnimals);
