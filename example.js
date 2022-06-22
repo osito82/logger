@@ -15,6 +15,7 @@ const confR_obj = {
 const log = new logger.R(confR_obj);
 
 
+
 log.name='s'
 log.R('hola')
 log.R();

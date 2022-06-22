@@ -1,4 +1,5 @@
 import * as misc from "./misc.js";
+import funcs from "./functions/functions.js";
 import { functionIsEmpty } from "./functions/functionIsEmpty.js";
 import _ from "lodash";
 
@@ -19,22 +20,14 @@ class R {
       _emptyFunction = true;
     }
 
-    //checking if it is an array
-    if (misc.countNumberKeys(obj) >= 1 && misc.isArray(obj[0])) {
-      if (this.config.array == "default") {
-        console.log(obj[0]);
-      } else if (this.config.array == "ordered")
-        console.log(misc.arrayKeyValue(obj[0]));
-    }
+    for (let i = 0; i <= obj.length; i++) {
+      
+      //checking if it is an array
+      funcs.arrayConsole(obj, this.config, i);
 
-    //checking if it is a string
-    if (misc.countNumberKeys(obj) >= 1 && typeof obj[0] == "string") {
-      if (this.config.string_caps == false) {
-        console.log(obj[0]);
-      } else if (this.config.string_caps == true) {
-        console.log(misc.toUpperCaps(obj[0]));
-      }
-    }
+      //checking if it is a string
+      funcs.stringConsole(obj, this.config, i);
+    } //for
   } //function R
 } //class R
 
