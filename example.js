@@ -1,7 +1,4 @@
-//const log = require("./functions");
-//import {log} =
-//import { lowerCase } from "lodash";
-import * as logger from "./functions.js";
+import * as logger from "./logR.js";
 import {
   objectPerson,
   stringExample,
@@ -11,7 +8,8 @@ import {
 
 //CONFIGURATION OBJECT
 const confR_obj = {
-    array: "simple"
+  //  array: "ordered",
+  string_caps: true
 }
 
 const log = new logger.R(confR_obj);
@@ -23,6 +21,7 @@ log.R();
 log.R(arrayNumbers);
 log.R(arrayStrings);
 log.R(stringExample, stringExample);
-log.R("hola");
+log.R("hola", 'ce');
+log.R(stringExample)
 
 

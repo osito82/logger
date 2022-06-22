@@ -23,3 +23,4 @@ export const objectPerson = {
     "ant",
     "bird"
   ];
+  export const arrayMixed = [15154, 'Costa Rica', 6595959, 'Panama', 5594598458, 'Honduras']
