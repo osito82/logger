@@ -23,10 +23,12 @@ log.R([[1,2], [2,5], [5,5]])
 
 // 
 // log.R();
-//log.R(arrayNumbers);
-// log.R(arrayStrings);
-// log.R(stringExample, stringExample);
-// log.R("hola", 'ce');
-// log.R(stringExample)
+log.R(5);
+log.R(true);
+log.R(arrayNumbers);
+ log.R(arrayStrings);
+ log.R(stringExample, stringExample);
+ log.R("hola", 'ce');
+log.R(stringExample)
 
 
