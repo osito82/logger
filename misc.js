@@ -44,3 +44,19 @@ export const toUpperCaps = (obxj) => {
   obxj = obxj.toUpperCase();
   return obxj;
 };
+
+//check if it is a multidimensional array
+//TODO - This algoritm has to be improved. It only check first 2 cases of array in an multi array
+export const isMultiDimensionArray = (ax = []) => {
+
+
+  if (Array.isArray(ax[0]) && Array.isArray(ax[1])) {
+//    console.log("SI ES DE MULTI");
+    return true;
+  } else {
+  //  console.log("NOPE ES DE MULTI");
+  return false;  
+}
+  
+};
+
