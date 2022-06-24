@@ -55,6 +55,13 @@ export const isMultiDimensionArray = (ax = []) => {
   }
 };
 
+export const isNUll = (obj) => {
+  if (typeof obj !== "undefined" && (typeof obj !== "object" || !obj)) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 //checks and identify what kind of object we have to deal with!
 export const objectIdentifier = (obj) => {
@@ -65,7 +72,7 @@ export const objectIdentifier = (obj) => {
     return "BOOLEAN";
   }
 
-  if (typeof obj === 'undefined') {
+  if (typeof obj === "undefined") {
     return "UNDEFINED";
   }
   if (typeof obj == "number") {
@@ -73,7 +80,9 @@ export const objectIdentifier = (obj) => {
   }
 
   if (typeof obj == "object") {
-    if (isMultiDimensionArray(obj)) {
+    if (isNUll(obj)) {
+      return "NULL";
+    } else if (isMultiDimensionArray(obj)) {
       return "MULTI_ARRAY";
     } else if (isArray(obj)) {
       return "ARRAY";
@@ -81,8 +90,4 @@ export const objectIdentifier = (obj) => {
       return "OBJECT";
     }
   }
-
-  
-
-  
 };

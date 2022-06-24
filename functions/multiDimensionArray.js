@@ -8,19 +8,22 @@ const multiDimensionArrayConsole = (obj, config, i) => {
 
 //console.log(obj[i])
   
-  if (misc.countNumberKeys(obj) >= 1 && misc.isMultiDimensionArray(obj[i])) {
-console.log('MULTIDIMENSION 0021', obj) 
+  if (misc.countNumberKeys(obj) >= 1) {
+
+
+
+
   //console.log('-------------',obj[i])
 
  // console.log("has 2+ dimensions");
-  // if (config.array == "default") {
-  //   console.log(obj[i]);
-  // } else if (config.array == "ordered")
-  //   console.log(misc.arrayKeyValue(obj[i]));
-  //  }
+  if (config.multiarray == "default") {
+    console.log(obj[i]);
+  } else if (config.multiarray == "table")
+  console.table(obj) 
+   }
 };
 
-}
+
 //console.log(multiDimensionArrayConsole())
 export default multiDimensionArrayConsole;
 

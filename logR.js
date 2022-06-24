@@ -9,6 +9,9 @@ class R {
     boolean: "default",
     number: "default",
     array: "default",
+    null: "default",
+    multiarray:"default",
+    //multiarray:"table",
     string: "default",
     string_caps: false
   };
@@ -24,13 +27,16 @@ class R {
         _emptyFunction = true;
       }
 
+      //console.log(obj[1])
+
       //looping ...obj
       for (let i = 0; i < obj.length; i++) {
         switch (misc.objectIdentifier(obj[i])) {
-          case "STRING":
-            {
-              funcs.stringConsole(obj, this.config, i);
-            }
+          case "NULL":            
+          funcs.nullConsole(obj, this.config, i);            
+        break;
+          case "STRING":            
+              funcs.stringConsole(obj, this.config, i);            
             break;
           case "NUMBER":
             funcs.numberConsole(obj, this.config, i);
@@ -53,6 +59,9 @@ class R {
           case undefined:
             console.log("a real undefined");
             break;
+            case null:
+              console.log("we are working hard on null!");
+              break;
           default:
             console.log("wow we have something weird here!");
             break;
