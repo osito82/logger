@@ -10,8 +10,10 @@ class R {
     number: "default",
     array: "default",
     null: "default",
+    
     multiarray:"default",
     //multiarray:"table",
+    //multiarray:"custom",
     string: "default",
     string_caps: false
   };

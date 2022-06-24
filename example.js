@@ -12,7 +12,8 @@ const configLog = {
   logger: true,
   //  array: "ordered",
   string_caps: true,
-  multiarray:'table'
+  multiarray:"custom",
+  //multiarray:'table'
 };
 
 const log = new logger.R(configLog);
