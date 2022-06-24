@@ -6,6 +6,8 @@ import _ from "lodash";
 class R {
   config = {
     logger: true,
+    boolean: "default",
+    number: "default",
     array: "default",
     string: "default",
     string_caps: false
@@ -23,8 +25,7 @@ class R {
       }
 
       //looping ...obj
-      for (let i = 0; i <= obj.length; i++) {
-        
+      for (let i = 0; i < obj.length; i++) {
         switch (misc.objectIdentifier(obj[i])) {
           case "STRING":
             {
@@ -32,10 +33,10 @@ class R {
             }
             break;
           case "NUMBER":
-            console.log("No numbers yet!");
+            funcs.numberConsole(obj, this.config, i);
             break;
           case "BOOLEAN":
-            console.log("No Boolean yet!");
+            funcs.booleanConsole(obj, this.config, i);
             break;
           case "UNDEFINED":
             console.log("No undefined yet!");
@@ -44,30 +45,18 @@ class R {
             console.log("No complex objects yet!");
             break;
           case "ARRAY":
-            {
-              funcs.arrayConsole(obj, this.config, i);
-            }
+            funcs.arrayConsole(obj, this.config, i);
             break;
           case "MULTI_ARRAY":
-            {
-              funcs.multiDimensionArrayConsole(obj, this.config, i);
-            }
+            funcs.multiDimensionArrayConsole(obj, this.config, i);
             break;
           case undefined:
-            {
-              console.log("a real undefined");
-            }
+            console.log("a real undefined");
             break;
           default:
-            {
-              console.log("wow we have something weird here!");
-            }
+            console.log("wow we have something weird here!");
             break;
         }
-
-        //checking if it is a multi-Dimensional Array
-
-        
       } //for
     } // if logger swich conf
   } //function R

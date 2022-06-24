@@ -3,32 +3,33 @@ import {
   objectPerson,
   stringExample,
   arrayNumbers,
+  arrayMixed,
   arrayStrings
 } from "./mockData.js";
 
 //CONFIGURATION OBJECT
-const confR_obj = {
-  logger:true,
+const configLog = {
+  logger: true,
   //  array: "ordered",
   string_caps: true
-}
+};
 
-const log = new logger.R(confR_obj);
+const log = new logger.R(configLog);
 
-// log.name='s'
-log.R('hola')
-log.R([[1,2], [2,5], [5,5]])
-
-
-
-// 
-// log.R();
-log.R(5);
+log.R("hola");
+log.R([
+  [1, 2],
+  [2, 5],
+  [5, 5]
+]);
+log.R();
+log.R(55665);
 log.R(true);
 log.R(arrayNumbers);
- log.R(arrayStrings);
- log.R(stringExample, stringExample);
- log.R("hola", 'ce');
-log.R(stringExample)
+log.R(arrayStrings);
+log.R(stringExample, stringExample);
+log.R("hola", "ce");
+log.R(stringExample);
+log.R(arrayMixed);
 
-
+log.R(objectPerson);

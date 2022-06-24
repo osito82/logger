@@ -11,7 +11,7 @@ export const objectPerson = {
     website: "https://www.yahoo.com"
   };
   export const stringExample = "I am an string"
-  export const arrayNumbers = [10, 58, 566, 454, 1, 85002, 125, 45, 798, 695];
+  export const arrayNumbers = [10, 58, 566, 454, 1, 85002, 125, 45, 798, 69510, 58, 566, 454, 1, 85002, 125, 45, 798, 695];
   export const arrayStrings = [
     "cat",
     "dog",
