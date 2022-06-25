@@ -15,6 +15,13 @@ const configLog = {
   string_caps: true,
   multiarray:"custom",
   //multiarray:'table'
+
+
+//object:'default',
+      //object:'string',
+    object:'table',
+
+
 };
 
 const log = new logger.R(configLog);
@@ -53,4 +60,4 @@ log.R(null, jsonObject,arrayMixed );
 
 console.log(null, jsonObject,arrayMixed );
 
-console.table({firstname:"John", lastname:"Doe"});
+//console.table({firstname:"John", lastname:"Doe"});
