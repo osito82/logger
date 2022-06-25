@@ -4,6 +4,7 @@ import numberConsole from './number.js'
 import booleanConsole from './boolean.js'
 import multiDimensionArrayConsole from "./multiDimensionArray.js"
 import nullConsole from './nulll.js'
+import objectConsole from './object.js'
 
 export default {
   arrayConsole,
@@ -11,5 +12,6 @@ export default {
   nullConsole,
   numberConsole,
   booleanConsole,
+  objectConsole,
   multiDimensionArrayConsole
 };
