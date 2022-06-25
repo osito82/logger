@@ -15,7 +15,8 @@ export const objectPerson = {
 export const jsonObject = {
   name: "Laura",
   objecto2: {
-    gpola: 123
+    gpola: 123,
+    lastname: "Salaza2r",
   },
   lastname: "Salazar",
   age: 45

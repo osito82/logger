@@ -11,6 +11,9 @@ class R {
     array: "default",
     null: "default",
     object:"default",
+    //object:'string',
+    //object:'table',
+    
     
     multiarray:"default",
     //multiarray:"table",
