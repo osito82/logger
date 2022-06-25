@@ -5,7 +5,7 @@ const nullConsole = (obj, config, i) => {
 
   if (misc.countNumberKeys(obj) >= 1) {
     if (config.null == "default") {
-      console.log('* null *');
+      console.log('null');
     }
   }
 };

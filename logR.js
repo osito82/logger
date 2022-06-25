@@ -10,8 +10,11 @@ class R {
     number: "default",
     array: "default",
     null: "default",
+    object:"default",
+    
     multiarray:"default",
     //multiarray:"table",
+    //multiarray:"custom",
     string: "default",
     string_caps: false
   };
@@ -48,7 +51,8 @@ class R {
             console.log("No undefined yet!");
             break;
           case "OBJECT":
-            console.log("No complex objects yet!");
+            funcs.objectConsole(obj, this.config, i);
+           
             break;
           case "ARRAY":
             funcs.arrayConsole(obj, this.config, i);

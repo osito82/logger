@@ -1,5 +1,6 @@
 import * as logger from "./logR.js";
 import {
+  jsonObject,
   objectPerson,
   stringExample,
   arrayNumbers,
@@ -12,7 +13,8 @@ const configLog = {
   logger: true,
   //  array: "ordered",
   string_caps: true,
-  multiarray:'table'
+  multiarray:"custom",
+  //multiarray:'table'
 };
 
 const log = new logger.R(configLog);
@@ -43,4 +45,12 @@ log.R(stringExample);
 log.R(arrayMixed);
 
 log.R(objectPerson);
-log.R(null);
+
+
+log.R(jsonObject);
+
+log.R(null, jsonObject,arrayMixed );
+
+console.log(null, jsonObject,arrayMixed );
+
+console.table({firstname:"John", lastname:"Doe"});
