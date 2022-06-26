@@ -12,10 +12,7 @@ class R {
     null: "default",
     object: "default",
 
-    template: {
-      name: 'default',
-      date:false
-    },
+   
     //object:'string',
     //object:'table',
     // object:"brakets",

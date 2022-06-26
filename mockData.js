@@ -1,5 +1,6 @@
 //js object
 export const objectPerson = {
+  __template: 'brakets', 
   name: "Laura",
   lastname: "Salazar",
   age: 45,
@@ -9,20 +10,22 @@ export const objectPerson = {
   phone: "2233-6421",
   phoneCode: "506",
   email: "info@domain.com",
-  website: "https://www.yahoo.com"
+  website: "https://www.yahoo.com",
 };
 
 export const jsonObject = {
+  __template: 'brakets', 
+  __date: true,
   __title: "jsonObject",
   name: "Laura",
   named_object: { name: "guillermo", phone: "678-555-8888" },
   lastname: "Salazar",
-  age: 45
+  age: 45,
 };
 export const stringExample = "I am an string";
 export const arrayNumbers = [
   10, 58, 566, 454, 1, 85002, 125, 45, 798, 69510, 58, 566, 454, 1, 85002, 125,
-  45, 798, 695
+  45, 798, 695,
 ];
 export const arrayStrings = [
   "cat",
@@ -33,7 +36,7 @@ export const arrayStrings = [
   "elephant",
   "rhino",
   "ant",
-  "bird"
+  "bird",
 ];
 export const arrayMixed = [
   15154,
@@ -41,5 +44,5 @@ export const arrayMixed = [
   6595959,
   "Panama",
   5594598458,
-  "Honduras"
+  "Honduras",
 ];
