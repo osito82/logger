@@ -11,6 +11,13 @@ export const isArray = (object) => {
   return Array.isArray(object);
 };
 
+export const getDate =()=>{
+  
+var today= new Date().toLocaleString('en-US', { timeZone: 'UTC' });
+return today
+
+}
+
 export const hasPropertyInObject = (object, propertyName) => {
   return object.hasOwnProperty(propertyName);
 };
