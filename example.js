@@ -16,11 +16,18 @@ const configLog = {
   string_caps: true,
   multiarray: "custom",
   //multiarray:'table'
-  object: "brackets",
+
 
   //object:'default',
   //object:'string',
   // object:'table',
+
+  template: {
+    name: 'brakets',
+    date:true
+  },
+
+
 };
 
 const log = new logger.R(configLog);

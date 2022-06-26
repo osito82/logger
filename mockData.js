@@ -13,10 +13,9 @@ export const objectPerson = {
 };
 
 export const jsonObject = {
-  __title:'jsonObject',
-__date: true,
+  __title: "jsonObject",
   name: "Laura",
-
+  named_object: { name: "guillermo", phone: "678-555-8888" },
   lastname: "Salazar",
   age: 45
 };
