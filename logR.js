@@ -12,7 +12,6 @@ class R {
     null: "default",
     object: "default",
 
-   
     //object:'string',
     //object:'table',
     // object:"brakets",
@@ -21,7 +20,7 @@ class R {
     //multiarray:"table",
     //multiarray:"custom",
     string: "default",
-    string_caps: false
+    string_caps: false,
   };
 
   constructor(configObject = this.config) {
@@ -69,12 +68,9 @@ class R {
             console.log("we are working hard on null!");
             break;
 
-
-            case "OBJECT":
-              funcs.objectConsole(obj, this.config, i);
-  
-              break;
-
+          case "OBJECT":
+            funcs.objectConsole(obj, this.config, i);
+            break;
 
           default:
             console.log("wow we have something weird here!");
