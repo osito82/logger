@@ -20,7 +20,7 @@ class R {
     //multiarray:"table",
     //multiarray:"custom",
     string: "default",
-    string_caps: false,
+    string_caps: false
   };
 
   constructor(configObject = this.config) {
@@ -34,9 +34,6 @@ class R {
         _emptyFunction = true;
       }
 
-      //console.log(obj[1])
-
-      //looping ...obj
       for (let i = 0; i < obj.length; i++) {
         switch (misc.objectIdentifier(obj[i])) {
           case "NULL":

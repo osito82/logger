@@ -15,7 +15,9 @@ const configLog = {
   string_caps: true,
   multiarray: "custom",
   //multiarray:'table'
-  //object:'default',
+//  object:'default',
+
+  //template:'default'
   //object:'string',
   // object:'table',
 };
@@ -49,6 +51,7 @@ const log = new logger.R(configLog);
 
 //console.log(null, jsonObject, arrayMixed);
 
+//log.R(objectPerson);
 log.R(objectPerson);
 //console.log(['hola'])
 
