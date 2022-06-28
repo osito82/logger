@@ -5,7 +5,8 @@ import {
   stringExample,
   arrayNumbers,
   arrayMixed,
-  arrayStrings
+  arrayStrings,
+  noTemplateSimpleObject
 } from "./mockData.js";
 
 //CONFIGURATION OBJECT
@@ -13,28 +14,20 @@ const configLog = {
   logger: true,
   //  array: "ordered",
   //array: "default_table",
-  array: 'custom_table',
+  array: "custom_table",
   string_caps: true,
   multiarray: "custom_table"
+
   //multiarray: "defualt_table",
   //multiarray:'table'
   //  object:'default',
 
-  
   //object:'string',
   // object:'table',
- // object:"brakets",
-
-   
-    
-        
-    
-   
+  // object:"brakets",
 };
 
 const log = new logger.R(configLog);
-
-log.R("hola");
 
 log.R();
 log.R(55665);
@@ -61,9 +54,11 @@ log.R([
   [1, "2000", 4, 6],
   [1, 2, "guillermo", 6]
 ]);
-log.R(undefined)
+log.R(undefined);
 log.R([
   [1, { casa: 5 }],
   [2, [1, 2]],
   [undefined, 5]
 ]);
+
+log.R(noTemplateSimpleObject);

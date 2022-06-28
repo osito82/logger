@@ -1,4 +1,17 @@
 //js object
+
+export const noTemplateSimpleObject = {
+  name: "Laura",
+  lastname: "Salazar",
+  age: 45,
+  nickname: "Lau",
+  gender: "male",
+  country: "Costa Rica",
+  phone: "2233-6421",
+  email: "info@domain.com",
+  website: "https://www.yahoo.com"
+};
+
 export const objectPerson = {
   ___template: "brakets",
   ___date: true,
