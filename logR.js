@@ -49,9 +49,8 @@ class R {
             funcs.booleanConsole(obj, this.config, i);
             break;
           case "UNDEFINED":
-            console.log("No undefined yet!");
+            funcs.undefinedConsole(obj, this.config, i);
             break;
-
           case "ARRAY":
             funcs.arrayConsole(obj, this.config, i);
             break;

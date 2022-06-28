@@ -29,7 +29,6 @@ export const arrayKeyValue = (obj) => {
     } else {
       coma = "";
     }
-
     container = container + `${key}: ${value}${coma} `;
   });
 
@@ -58,6 +57,29 @@ export const isNUll = (obj) => {
   } else {
     return false;
   }
+};
+
+//readme: This function only prints 2 dimension arrays
+//Enbeded arrays or objects will be stringyfy
+export const printTable = (board, clitable2) => {
+  for (var i = 0; i < board.length; i++) {
+    var buffer = [];
+    for (var x = 0; x < board[i].length; x++) {
+      if (isArray(board[i][x])) {
+        buffer.push("[" + board[i][x].toString() + "]");
+      } else if (whatTypeIs(board[i][x]) == "object") {
+        var val = JSON.stringify(board[i][x]);
+        buffer.push(val);
+      } else if (whatTypeIs(board[i][x]) == "undefined") {
+        //var val = JSON.stringify(board[i][x]);
+        buffer.push('undefined');
+      } else {
+        buffer.push(board[i][x]);
+      }
+    }
+    clitable2.push(buffer);
+  }
+  return clitable2.toString();
 };
 
 //checks and identify what kind of object we have to deal with!

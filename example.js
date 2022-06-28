@@ -5,18 +5,20 @@ import {
   stringExample,
   arrayNumbers,
   arrayMixed,
-  arrayStrings,
+  arrayStrings
 } from "./mockData.js";
 
 //CONFIGURATION OBJECT
 const configLog = {
   logger: true,
   //  array: "ordered",
+  //array: "default_table",
+  array: 'custom_table',
   string_caps: true,
-  multiarray: "custom_table",
+  multiarray: "custom_table"
   //multiarray: "defalttable",
   //multiarray:'table'
-//  object:'default',
+  //  object:'default',
 
   //template:'default'
   //object:'string',
@@ -27,9 +29,6 @@ const log = new logger.R(configLog);
 
 log.R("hola");
 
-
-
-
 log.R();
 log.R(55665);
 log.R(true);
@@ -38,11 +37,10 @@ log.R(arrayStrings);
 log.R(stringExample, stringExample);
 log.R("hola", "ce");
 log.R(stringExample);
+
 log.R(arrayMixed);
 
 log.R(null, jsonObject, arrayMixed);
-
-console.log(null, jsonObject, arrayMixed);
 
 //log.R(objectPerson);
 log.R(objectPerson);
@@ -53,12 +51,12 @@ log.R(objectPerson);
 
 log.R([
   [1, 2, 4, 60],
-  [1, '2000', 4, 6],
-  [1, 2, 'guillermo', 6],
+  [1, "2000", 4, 6],
+  [1, 2, "guillermo", 6]
 ]);
-
+log.R(undefined)
 log.R([
-  [1, {'casa':5}],
-  [2, [1,2]],
-  [5, 5],
+  [1, { casa: 5 }],
+  [2, [1, 2]],
+  [undefined, 5]
 ]);
