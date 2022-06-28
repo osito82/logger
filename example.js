@@ -13,7 +13,8 @@ const configLog = {
   logger: true,
   //  array: "ordered",
   string_caps: true,
-  multiarray: "custom",
+  multiarray: "custom_table",
+  //multiarray: "defalttable",
   //multiarray:'table'
 //  object:'default',
 
@@ -57,7 +58,7 @@ log.R([
 ]);
 
 log.R([
-  [1, 45],
-  [2, 5],
+  [1, {'casa':5}],
+  [2, [1,2]],
   [5, 5],
 ]);
