@@ -15,7 +15,7 @@ const templatebrakets = (obj) => {
     }
 
     if (!logR_RESERVED_KEYS.includes(key)) {
-      braketsContent = braketsContent + `[${key}: ${val}]`;
+      braketsContent = braketsContent + `[${key}:${val}]`;
     }
   }
 
