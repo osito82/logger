@@ -1,4 +1,4 @@
-import * as logger from "./logR.js";
+import * as logger from "./lib/logR.js";
 import {
   jsonObject,
   objectPerson,
@@ -16,13 +16,20 @@ const configLog = {
   array: 'custom_table',
   string_caps: true,
   multiarray: "custom_table"
-  //multiarray: "defalttable",
+  //multiarray: "defualt_table",
   //multiarray:'table'
   //  object:'default',
 
-  //template:'default'
+  
   //object:'string',
   // object:'table',
+ // object:"brakets",
+
+   
+    
+        
+    
+   
 };
 
 const log = new logger.R(configLog);

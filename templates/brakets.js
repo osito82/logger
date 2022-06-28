@@ -1,11 +1,11 @@
-import * as misc from "../misc.js";
+import * as misc from '../lib/misc.js'
 import _ from "lodash";
 
-const logR_RESERVED_KEYS = ["__title", "__template", "__date"];
+const logR_RESERVED_KEYS = ["___title", "___template", "___date"];
 
 const templatebrakets = (obj) => {
-  let date = obj.__date == true ? `[${misc.getDate()}]` : "";
-  let title = !_.isEmpty(obj.__title) ? `[${obj.__title}]` : "";
+  let date = obj.___date == true ? `[${misc.getDate()}]` : "";
+  let title = !_.isEmpty(obj.___title) ? `[${obj.___title}]` : "";
 
   let braketsContent = "";
 

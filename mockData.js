@@ -1,8 +1,8 @@
 //js object
 export const objectPerson = {
-  __template: "brakets",
-  __date: true,
-  __title: "titlee",
+  ___template: "brakets",
+  ___date: true,
+  ___title: "titlee",
   name: "Laura",
   lastname: "Salazar",
   age: 45,
@@ -15,9 +15,9 @@ export const objectPerson = {
 };
 
 export const jsonObject = {
-  // __template: 'brakets',
-  __date: true,
-  __title: "tituloooo",
+   ___template: 'brakets',
+  ___date: true,
+  ___title: "tituloooo",
   name: "Laura",
   named_object: { name: "guillermo", phone: "678-555-8888" },
   lastname: "Hernandez",

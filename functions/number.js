@@ -1,4 +1,4 @@
-import * as misc from "../misc.js";
+import * as misc from '../lib/misc.js'
 
 //checking if it is a string
 const numberConsole = (obj, config, i) => {

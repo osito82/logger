@@ -1,7 +1,7 @@
 {
   "name": "logger",
   "version": "1.0.0",
-  "description": "It is just an console log extension",
+  "description": "It's just a console log extension",
   "main": "index.js",
   "type": "module",
   "scripts": {

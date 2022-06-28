@@ -1,10 +1,10 @@
-import * as misc from "../misc.js";
+import * as misc from '../lib/misc.js'
 import _ from "lodash";
 import templatebrakets from "../templates/brakets.js";
 
 const objectConsole = (obj, config, i) => {
   if (misc.countNumberKeys(obj) >= 1) {
-    let template = _.get(obj[i], "__template", "default");
+    let template = _.get(obj[i], "___template", "default");
 
     if (!template || template == "default") {
       if (config.object == "default") {
