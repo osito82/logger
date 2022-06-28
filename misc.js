@@ -2,13 +2,17 @@ export const whatTypeIs = (object) => {
   return typeof object;
 };
 
-// return typeof message;
 export const countNumberKeys = (object) => {
   return Object.keys(object).length;
 };
 
 export const isArray = (object) => {
   return Array.isArray(object);
+};
+
+export const getDate = () => {
+  let today = new Date().toLocaleString("en-US", { timeZone: "UTC" });
+  return today;
 };
 
 export const hasPropertyInObject = (object, propertyName) => {
@@ -27,16 +31,9 @@ export const arrayKeyValue = (obj) => {
     }
 
     container = container + `${key}: ${value}${coma} `;
-
-    // console.log( key + ":", value)
   });
 
   return "Array: " + container;
-  //  console.log())
-};
-
-export const variableName = (obxj) => {
-  console.log({ obxj });
 };
 
 //convert string to UPPER CAPS

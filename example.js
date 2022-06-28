@@ -5,7 +5,7 @@ import {
   stringExample,
   arrayNumbers,
   arrayMixed,
-  arrayStrings
+  arrayStrings,
 } from "./mockData.js";
 
 //CONFIGURATION OBJECT
@@ -13,32 +13,21 @@ const configLog = {
   logger: true,
   //  array: "ordered",
   string_caps: true,
-  multiarray:"custom",
+  multiarray: "custom_table",
+  //multiarray: "defalttable",
   //multiarray:'table'
+//  object:'default',
 
-
-//object:'default',
-      //object:'string',
-    object:'table',
-
-
+  //template:'default'
+  //object:'string',
+  // object:'table',
 };
 
 const log = new logger.R(configLog);
 
 log.R("hola");
-log.R([
-  [1, 2],
-  [2, 5],
-  [5, 5]
-]);
 
 
-log.R([
-  [1, 2],
-  [2, 5, [1,2], 5],
-  [5, 5]
-]);
 
 
 log.R();
@@ -51,13 +40,25 @@ log.R("hola", "ce");
 log.R(stringExample);
 log.R(arrayMixed);
 
+log.R(null, jsonObject, arrayMixed);
+
+console.log(null, jsonObject, arrayMixed);
+
+//log.R(objectPerson);
 log.R(objectPerson);
+//console.log(['hola'])
 
-
-log.R(jsonObject);
-
-log.R(null, jsonObject,arrayMixed );
-
-console.log(null, jsonObject,arrayMixed );
-
+//log.R(jsonObject);
 //console.table({firstname:"John", lastname:"Doe"});
+
+log.R([
+  [1, 2, 4, 60],
+  [1, '2000', 4, 6],
+  [1, 2, 'guillermo', 6],
+]);
+
+log.R([
+  [1, {'casa':5}],
+  [2, [1,2]],
+  [5, 5],
+]);

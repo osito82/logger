@@ -10,12 +10,13 @@ class R {
     number: "default",
     array: "default",
     null: "default",
-    object:"default",
+    object: "default",
+
     //object:'string',
     //object:'table',
-    
-    
-    multiarray:"default",
+    // object:"brakets",
+
+    multiarray: "default",
     //multiarray:"table",
     //multiarray:"custom",
     string: "default",
@@ -33,16 +34,13 @@ class R {
         _emptyFunction = true;
       }
 
-      //console.log(obj[1])
-
-      //looping ...obj
       for (let i = 0; i < obj.length; i++) {
         switch (misc.objectIdentifier(obj[i])) {
-          case "NULL":            
-          funcs.nullConsole(obj, this.config, i);            
-        break;
-          case "STRING":            
-              funcs.stringConsole(obj, this.config, i);            
+          case "NULL":
+            funcs.nullConsole(obj, this.config, i);
+            break;
+          case "STRING":
+            funcs.stringConsole(obj, this.config, i);
             break;
           case "NUMBER":
             funcs.numberConsole(obj, this.config, i);
@@ -53,10 +51,7 @@ class R {
           case "UNDEFINED":
             console.log("No undefined yet!");
             break;
-          case "OBJECT":
-            funcs.objectConsole(obj, this.config, i);
-           
-            break;
+
           case "ARRAY":
             funcs.arrayConsole(obj, this.config, i);
             break;
@@ -66,9 +61,14 @@ class R {
           case undefined:
             console.log("a real undefined");
             break;
-            case null:
-              console.log("we are working hard on null!");
-              break;
+          case null:
+            console.log("we are working hard on null!");
+            break;
+
+          case "OBJECT":
+            funcs.objectConsole(obj, this.config, i);
+            break;
+
           default:
             console.log("wow we have something weird here!");
             break;

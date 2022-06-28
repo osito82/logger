@@ -1,42 +1,40 @@
 import * as misc from "../misc.js";
+import Table from "cli-table2";
 
-//checking if it is an array
 
-//console.log("entrado multi");
+//readme: This function only prints 2 dimension arrays
+//Enbeded arrays or objects will be stringyfy
+var displayBoard = (board, clitable2) => {
+  for (var i = 0; i < board.length; i++) {
+    var buffer = [];
+    for (var x = 0; x < board[i].length; x++) {
+      if (misc.isArray(board[i][x])) {
+        buffer.push("[" + board[i][x].toString() + "]");
+      } else if (misc.whatTypeIs(board[i][x]) == "object") {
+        var val = JSON.stringify(board[i][x]);
+        buffer.push(val);
+      } else {
+        buffer.push(board[i][x]);
+      }
+    }
+    clitable2.push(buffer);
+  }
+  console.log(clitable2.toString());
+};
 
 const multiDimensionArrayConsole = (obj, config, i) => {
-  //console.log(obj[i])
-
-  function print(arr)
-  {
-  //var console = document.getElementById('mydiv');
-  var msg = '';
-  for(var i=0;i<arr.length;i++)
-  {
-      for(var j=0;j<arr[0].length;j++)
-          msg += arr[i][j];
-      msg += '<br />';
-  }
-console.log(msg);
-  }
-
+  var clitable2 = new Table();
   if (misc.countNumberKeys(obj) >= 1) {
-    //console.log('-------------',obj[i])
-  //  console.log('---------------------------------')
-    console.log(config.multiarray);
-
-
     if (config.multiarray == "default") {
       console.log(obj[i]);
-    } else if (config.multiarray == "table") {
+    } else if (config.multiarray == "default_table") {
       console.table(obj);
-    } else if (config.multiarray == "custom") {
-      print(obj);
+    } else if (config.multiarray == "custom_table") {
+      displayBoard(obj[i], clitable2);
     }
   }
 };
 
-//console.log(multiDimensionArrayConsole())
 export default multiDimensionArrayConsole;
 
 //notes:

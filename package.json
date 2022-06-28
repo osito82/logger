@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "It is just an console log extension",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "test"
   },
@@ -26,6 +26,7 @@
     "eslint": "^8.18.0"
   },
   "dependencies": {
+    "cli-table2": "^0.2.0",
     "lodash": "^4.17.21"
   }
 }

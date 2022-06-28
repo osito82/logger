@@ -1,5 +1,8 @@
 //js object
 export const objectPerson = {
+  __template: "brakets",
+  __date: true,
+  __title: "titlee",
   name: "Laura",
   lastname: "Salazar",
   age: 45,
@@ -7,20 +10,20 @@ export const objectPerson = {
   gender: "male",
   country: "Costa Rica",
   phone: "2233-6421",
-  phoneCode: "506",
   email: "info@domain.com",
   website: "https://www.yahoo.com"
 };
 
 export const jsonObject = {
+  // __template: 'brakets',
+  __date: true,
+  __title: "tituloooo",
   name: "Laura",
-  objecto2: {
-    gpola: 123,
-    lastname: "Salaza2r",
-  },
-  lastname: "Salazar",
+  named_object: { name: "guillermo", phone: "678-555-8888" },
+  lastname: "Hernandez",
   age: 45
 };
+
 export const stringExample = "I am an string";
 export const arrayNumbers = [
   10, 58, 566, 454, 1, 85002, 125, 45, 798, 69510, 58, 566, 454, 1, 85002, 125,
