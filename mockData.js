@@ -61,3 +61,10 @@ export const arrayMixed = [
   5594598458,
   "Honduras"
 ];
+
+
+export const twoDimensionsArray = [
+  [1, 2, 4, 60],
+  [1, "2000", 4, 6],
+  [1, 2, "guillermo", 6]
+]

@@ -6,7 +6,8 @@ import {
   arrayNumbers,
   arrayMixed,
   arrayStrings,
-  noTemplateSimpleObject
+  noTemplateSimpleObject,
+  twoDimensionsArray
 } from "./mockData.js";
 
 //CONFIGURATION OBJECT
@@ -28,6 +29,10 @@ const configLog = {
 };
 
 const log = new logger.R(configLog);
+
+
+
+
 
 log.R();
 log.R(55665);
@@ -61,4 +66,15 @@ log.R([
   [undefined, 5]
 ]);
 
-log.R(noTemplateSimpleObject);
+
+//log.Args({ head: ["H1", "H2", "H3", "H4"] }).R(noTemplateSimpleObject);
+//log.Args({ head: ["H5", "H6", "H7", "H8"] }).R(noTemplateSimpleObject);
+
+ //console.log('--------------------------------------------------------------------')
+log.Args({ head: ["H1", "88", "88", "88"] }).R(twoDimensionsArray);
+log.R(twoDimensionsArray);
+log.Args({ head: ["H1", "H2", "H3", "66"] }).R(twoDimensionsArray);
+//log.R(twoDimensionsArray).Args({ head: ["H1", "H2", "H3", "H4"] });
+
+
+//todo: find a way to filter args according to the object
