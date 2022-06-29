@@ -1,20 +1,9 @@
 import * as misc from "../lib/misc.js";
 import colors from "colors";
-import _ from "lodash";
 
 const stringConsole = (obj, config, i, logArguments) => {
-  if (logArguments.colors != "default") {
-    _.assign(logArguments, { colors: logArguments.colors });
-    
-    colors.setTheme({
-      custom: logArguments.colors
-    });
-  }
-  else {
-    colors.setTheme({
-      custom: 'reset'
-    });
-  }
+
+  colors.setTheme(misc.colorsToConsole(logArguments));
 
   if (misc.countNumberKeys(obj) >= 1) {
     if (config.string_caps == false) {

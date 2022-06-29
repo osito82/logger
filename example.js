@@ -81,5 +81,5 @@ log.R(mDimensionsArray);
 //  log.Args({ colors: ["rainbow", "blue", "bgGreen"] }).R("batman forever");
 //log.Args({ colors: ["blue"] }).R("batman forever");
 log.R("MES DE:");
-log.Args({ colors: ["rainbow"] }).R("RAINBOW");
-
+log.Args({ colors: ["rainbow"] }).R(1111111111111111);
+log.R(22222222222222);
