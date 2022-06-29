@@ -7,6 +7,7 @@ import {
   arrayMixed,
   arrayStrings,
   noTemplateSimpleObject,
+  mDimensionsArray,
   twoDimensionsArray
 } from "./mockData.js";
 
@@ -75,6 +76,6 @@ log.Args({ head: ["H1", "88", "88", "88"] }).R(twoDimensionsArray);
 log.R(twoDimensionsArray);
 log.Args({ head: ["H1", "H2", "H3", "66"] }).R(twoDimensionsArray);
 //log.R(twoDimensionsArray).Args({ head: ["H1", "H2", "H3", "H4"] });
-
+log.R(mDimensionsArray);
 
 //todo: find a way to filter args according to the object
