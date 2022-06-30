@@ -1,8 +1,8 @@
-import * as misc from '../lib/misc.js'
+import * as misc from "../lib/misc.js";
 import _ from "lodash";
 import templatebrakets from "../templates/brakets.js";
 
-const objectConsole = (obj, config, i) => {
+const objectConsole = (obj, config, i, logArguments) => {
   if (misc.countNumberKeys(obj) >= 1) {
     let template = _.get(obj[i], "___template", "default");
 
@@ -18,7 +18,7 @@ const objectConsole = (obj, config, i) => {
 
     //USING TEMPLATES FOR OBJECTS
     else if (template == "brakets") {
-      console.log(templatebrakets(obj[i]));
+      console.log(templatebrakets(obj[i], logArguments));
     }
   }
 };

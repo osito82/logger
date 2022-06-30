@@ -19,7 +19,10 @@ const configLog = {
   enableColors: true,
   //  array: "ordered",
   //array: "default_table",
-  array: "custom_table",
+  array: "default",
+  // array:'default_table',
+  // array:'ordered',
+
   string_caps: false,
   multiarray: "custom_table"
 
@@ -37,18 +40,14 @@ const log = new logger.R(configLog);
 log.R();
 log.R(55665);
 log.R(true);
-log.R(arrayNumbers);
-log.R(arrayStrings);
 log.R(stringExample, stringExample);
 log.R("hola", "ce");
 log.R(stringExample);
 
-log.R(arrayMixed);
-
 log.R(null, jsonObject, arrayMixed);
 
 //log.R(objectPerson);
-log.R(objectPerson);
+
 //console.log(['hola'])
 
 //log.R(jsonObject);
@@ -83,3 +82,9 @@ log.R(mDimensionsArray);
 log.R("MES DE:");
 log.Args({ colors: ["rainbow"] }).R(1111111111111111);
 log.R(22222222222222);
+log.R(arrayMixed);
+log.R(arrayNumbers);
+
+log.R(arrayStrings); //en arrays no colors
+log.Args({ colors: { key: ['red', 'bgWhite'], value: ["blue", 'bgWhite'] } }).R(objectPerson);
+log.R(objectPerson);

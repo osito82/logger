@@ -28,7 +28,7 @@ export const objectPerson = {
 };
 
 export const jsonObject = {
-   ___template: 'brakets',
+  ___template: "brakets",
   ___date: true,
   ___title: "tituloooo",
   name: "Laura",
@@ -62,17 +62,15 @@ export const arrayMixed = [
   "Honduras"
 ];
 export const mDimensionsArray = [
-  
-    ["0, 0", "1, 0", "2, 0", "3, 0", "4, 0"],
-    ["0, 1", "1, 1", "2, 1", "3, 1", "4, 1"],
-    ["0, 2", "1, 2", "2, 2", "3, 2", "4, 2"],
-    ["0, 3", "1, 3", "2, 3", "3, 3", "4, 3"],
-    ["0, 4", "1, 4", "2, 4", "3, 4", "4, 4"],
-  
-]
+  ["0, 0", "1, 0", "2, 0", "3, 0", "4, 0"],
+  ["0, 1", "1, 1", "2, 1", "3, 1", "4, 1"],
+  ["0, 2", "1, 2", "2, 2", "3, 2", "4, 2"],
+  ["0, 3", "1, 3", "2, 3", "3, 3", "4, 3"],
+  ["0, 4", "1, 4", "2, 4", "3, 4", "4, 4"]
+];
 
 export const twoDimensionsArray = [
   [1, 2, 4, 60],
   [1, "2000", 4, 6],
   [1, 2, "guillermo", 6]
-]
+];
