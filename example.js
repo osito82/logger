@@ -1,4 +1,6 @@
 import * as logger from "./lib/logR.js";
+import colors from "colors";
+
 import {
   jsonObject,
   objectPerson,
@@ -14,10 +16,14 @@ import {
 //CONFIGURATION OBJECT
 const configLog = {
   logger: true,
+  enableColors: true,
   //  array: "ordered",
   //array: "default_table",
-  array: "custom_table",
-  string_caps: true,
+  array: "default",
+  // array:'default_table',
+  // array:'ordered',
+
+  string_caps: false,
   multiarray: "custom_table"
 
   //multiarray: "defualt_table",
@@ -31,25 +37,17 @@ const configLog = {
 
 const log = new logger.R(configLog);
 
-
-
-
-
 log.R();
 log.R(55665);
 log.R(true);
-log.R(arrayNumbers);
-log.R(arrayStrings);
 log.R(stringExample, stringExample);
 log.R("hola", "ce");
 log.R(stringExample);
 
-log.R(arrayMixed);
-
 log.R(null, jsonObject, arrayMixed);
 
 //log.R(objectPerson);
-log.R(objectPerson);
+
 //console.log(['hola'])
 
 //log.R(jsonObject);
@@ -67,11 +65,10 @@ log.R([
   [undefined, 5]
 ]);
 
-
 //log.Args({ head: ["H1", "H2", "H3", "H4"] }).R(noTemplateSimpleObject);
 //log.Args({ head: ["H5", "H6", "H7", "H8"] }).R(noTemplateSimpleObject);
 
- //console.log('--------------------------------------------------------------------')
+//console.log('--------------------------------------------------------------------')
 log.Args({ head: ["H1", "88", "88", "88"] }).R(twoDimensionsArray);
 log.R(twoDimensionsArray);
 log.Args({ head: ["H1", "H2", "H3", "66"] }).R(twoDimensionsArray);
@@ -79,3 +76,15 @@ log.Args({ head: ["H1", "H2", "H3", "66"] }).R(twoDimensionsArray);
 log.R(mDimensionsArray);
 
 //todo: find a way to filter args according to the object
+
+//  log.Args({ colors: ["rainbow", "blue", "bgGreen"] }).R("batman forever");
+//log.Args({ colors: ["blue"] }).R("batman forever");
+log.R("MES DE:");
+log.Args({ colors: ["rainbow"] }).R(1111111111111111);
+log.R(22222222222222);
+log.R(arrayMixed);
+log.R(arrayNumbers);
+
+log.R(arrayStrings); //en arrays no colors
+log.Args({ colors: { key: ['red', 'bgWhite'], value: ["blue", 'bgWhite'] } }).R(objectPerson);
+log.R(objectPerson);

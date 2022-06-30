@@ -1,7 +1,6 @@
-import * as misc from '../lib/misc.js'
+import * as misc from "../lib/misc.js";
 
 //checking if it is an array
-
 const arrayConsole = (obj, config = {}, i) => {
   if (
     misc.countNumberKeys(obj) >= 1 &&
