@@ -90,6 +90,7 @@ log.Args({ colors: { key: ['red', 'bgWhite'], value: ["blue", 'bgWhite'] } }).R(
 log.R(objectPerson);
 
 
-log.md5('sss')
+//log.md5('sss')
 
+log.Funcs('md5', 'hola')
 
