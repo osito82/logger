@@ -92,5 +92,5 @@ log.R(objectPerson);
 
 //log.md5('sss')
 
-log.Funcs('md5', 'hola')
+log.Funcs({name:'md5'}, 'hola')
 
