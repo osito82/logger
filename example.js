@@ -88,3 +88,8 @@ log.R(arrayNumbers);
 log.R(arrayStrings); //en arrays no colors
 log.Args({ colors: { key: ['red', 'bgWhite'], value: ["blue", 'bgWhite'] } }).R(objectPerson);
 log.R(objectPerson);
+
+
+log.md5('sss')
+
+
