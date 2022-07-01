@@ -15,26 +15,19 @@ const templatebrakets = (obj, logArguments) => {
   let braketsContent = "";
   colors.setTheme({
     customKey: keycolor,
-    customValue: valuecolor
+    customValue: valuecolor,
   });
 
   for (let [key, val] of Object.entries(obj)) {
-
     if (misc.whatTypeIs(val) == "object") {
       val = JSON.stringify(val);
     }
 
-    if (
-      !RESERVED_KEYS.includes(key) &&
-      logArguments.colors === "default"
-    ) {
+    if (!RESERVED_KEYS.includes(key) && logArguments.colors === "default") {
       braketsContent = braketsContent + `[${key}:${val}]`;
     }
 
-    if (
-      !RESERVED_KEYS.includes(key) &&
-      logArguments.colors !== "default"
-    ) {
+    if (!RESERVED_KEYS.includes(key) && logArguments.colors !== "default") {
       braketsContent = braketsContent + `[${key.customKey}:${val.customValue}]`;
     }
   }
