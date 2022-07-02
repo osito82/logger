@@ -10,7 +10,7 @@ import {
   arrayStrings,
   noTemplateSimpleObject,
   mDimensionsArray,
-  twoDimensionsArray
+  twoDimensionsArray,
 } from "./mockData.js";
 
 //CONFIGURATION OBJECT
@@ -24,7 +24,7 @@ const configLog = {
   // array:'ordered',
 
   string_caps: false,
-  multiarray: "custom_table"
+  multiarray: "custom_table",
 
   //multiarray: "defualt_table",
   //multiarray:'table'
@@ -56,13 +56,13 @@ log.R(null, jsonObject, arrayMixed);
 log.R([
   [1, 2, 4, 60],
   [1, "2000", 4, 6],
-  [1, 2, "guillermo", 6]
+  [1, 2, "guillermo", 6],
 ]);
 log.R(undefined);
 log.R([
   [1, { casa: 5 }],
   [2, [1, 2]],
-  [undefined, 5]
+  [undefined, 5],
 ]);
 
 //log.Args({ head: ["H1", "H2", "H3", "H4"] }).R(noTemplateSimpleObject);
@@ -86,5 +86,18 @@ log.R(arrayMixed);
 log.R(arrayNumbers);
 
 log.R(arrayStrings); //en arrays no colors
-log.Args({ colors: { key: ['red', 'bgWhite'], value: ["blue", 'bgWhite'] } }).R(objectPerson);
+log
+  .Args({ colors: { key: ["red", "bgWhite"], value: ["blue", "bgWhite"] } })
+  .R(objectPerson);
 log.R(objectPerson);
+
+//log.md5('sss')
+
+log.Funcs({ name: "md5" }, "hola");
+log.R(noTemplateSimpleObject);
+//log.();
+log
+  .Template({
+    template: { name: "brakets", date: true, title: "objectPerson" },
+  })
+  .R(objectPerson);
