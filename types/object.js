@@ -3,8 +3,9 @@ import _ from "lodash";
 import templatebrakets from "../templates/brakets.js";
 
 const objectConsole = (obj, config, i, logArguments) => {
+
   if (misc.countNumberKeys(obj) >= 1) {
-    let template = _.get(obj[i], "___template", "default");
+    let template = _.get(logArguments, "template", "default");
 
     if (!template || template == "default") {
       if (config.object == "default") {
@@ -17,7 +18,7 @@ const objectConsole = (obj, config, i, logArguments) => {
     }
 
     //USING TEMPLATES FOR OBJECTS
-    else if (template == "brakets") {
+    else if (template.name == "brakets") {
       console.log(templatebrakets(obj[i], logArguments));
     }
   }

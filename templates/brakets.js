@@ -2,15 +2,17 @@ import * as misc from "../lib/misc.js";
 import _ from "lodash";
 import colors from "colors";
 
-const RESERVED_KEYS = ["___title", "___template", "___date"];
+//const RESERVED_KEYS = ["___title", "___template", "___date"];
 
 const templatebrakets = (obj, logArguments) => {
+  // let template = _.get(logArguments, "template", "default");
+
   const keycolor = logArguments.colors.key;
 
   const valuecolor = logArguments.colors.value;
 
-  let date = obj.___date == true ? `[${misc.getDate()}]` : "";
-  let title = !_.isEmpty(obj.___title) ? `[${obj.___title}]` : "";
+  let date = logArguments.template.date == true ? `[${misc.getDate()}]` : "";
+  let title = !_.isEmpty(logArguments.template.title) ? `[${logArguments.template.title}]` : "";
 
   let braketsContent = "";
   colors.setTheme({
@@ -23,11 +25,11 @@ const templatebrakets = (obj, logArguments) => {
       val = JSON.stringify(val);
     }
 
-    if (!RESERVED_KEYS.includes(key) && logArguments.colors === "default") {
+    if (logArguments.colors === "default") {
       braketsContent = braketsContent + `[${key}:${val}]`;
     }
 
-    if (!RESERVED_KEYS.includes(key) && logArguments.colors !== "default") {
+    if (logArguments.colors !== "default") {
       braketsContent = braketsContent + `[${key.customKey}:${val.customValue}]`;
     }
   }
