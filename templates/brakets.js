@@ -5,6 +5,7 @@ import colors from "colors";
 //const RESERVED_KEYS = ["___title", "___template", "___date"];
 
 const templatebrakets = (obj, logArguments) => {
+
   // let template = _.get(logArguments, "template", "default");
 
   const keycolor = logArguments.colors.key;

@@ -96,7 +96,7 @@ log.R(objectPerson);
 log.Funcs({ name: "md5" }, "hola");
 log.R(noTemplateSimpleObject);
 //log.();
-log
+log.Args({ colors: { key: ["red", "bgWhite"], value: ["blue", "bgWhite"] } })
   .Template({
     template: { name: "brakets", date: true, title: "objectPerson" },
   })
