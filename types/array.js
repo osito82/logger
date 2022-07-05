@@ -1,6 +1,5 @@
 import * as misc from "../lib/misc.js";
 
-//checking if it is an array
 const arrayConsole = (obj, config = {}, i) => {
   if (
     misc.countNumberKeys(obj) >= 1 &&
@@ -18,6 +17,3 @@ const arrayConsole = (obj, config = {}, i) => {
 };
 
 export default arrayConsole;
-
-//notes:
-//config is this.config

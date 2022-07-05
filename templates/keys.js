@@ -2,11 +2,7 @@ import * as misc from "../lib/misc.js";
 import _ from "lodash";
 import colors from "colors";
 
-//const RESERVED_KEYS = ["___title", "___template", "___date"];
-
 const templatekeys = (obj, logArguments) => {
-  // let template = _.get(logArguments, "template", "default");
-
   const keycolor = logArguments.colors.key;
 
   const valuecolor = logArguments.colors.value;

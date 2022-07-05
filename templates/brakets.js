@@ -23,14 +23,7 @@ const templatebrakets = (obj, logArguments) => {
   });
 
   for (let [key, val] of Object.entries(obj)) {
-    //  if (misc.whatTypeIs(val) == "object" | misc.whatTypeIs(val) =='number'| misc.whatTypeIs(val) =='bool' ) {
     val = JSON.stringify(val);
-    //  }
-//if (misc.whatTypeIs(val) =='number') {
-
-//} else{}
-
-
 
     if (logArguments.colors === "default") {
       braketsContent = braketsContent + `[${key}:${val}]`;

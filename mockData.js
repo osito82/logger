@@ -6,17 +6,17 @@ export const noTemplateSimpleObject = {
   age: 45,
   nickname: "Lau",
   gender: "male",
-  friends: ["jamime", "roberto", "luis"],
+  friends: ["Jamime", "Roberto", "Ana"],
   country: "Costa Rica",
-  phone: "2233-6421",
+  phone: "2285-6421",
   email: "info@domain.com",
   phones: { home: "222336789", cell: "22334455" },
   website: "https://www.yahoo.com"
 };
 
 export const objectPerson = {
-  name: "Laura",
-  lastnamez: "Salazar",
+  name: "Mario",
+  lastname: "Soto",
   bool:true,
   age: 45,
   friends: ["jamime", "roberto", "luis"],
@@ -29,7 +29,7 @@ export const objectPerson = {
 };
 
 export const jsonObject = {
-  name: "Laura",
+  name: "Mario",
   named_object: { name: "guillermo", phone: "678-555-8888" },
   lastname: "Hernandez",
   age: 45
@@ -70,5 +70,5 @@ export const mDimensionsArray = [
 export const twoDimensionsArray = [
   [1, 2, 4, 60],
   [1, "2000", 4, 6],
-  [1, 2, "guillermo", 6]
+  [1, 2, "cat", 6]
 ];
