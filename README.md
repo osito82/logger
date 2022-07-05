@@ -7,6 +7,12 @@ The idea is just to extend the power of the JS console log.
 npm install --save logr
 ````
 
+### In your package.json remember to put
+````
+"type": "module",
+
+````
+
 ## Simple usage example
 
 ```

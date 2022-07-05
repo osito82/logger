@@ -1,4 +1,5 @@
-import * as logger from "./lib/logR.js";
+import * as logger from "osolog";
+
 
 //COPY AND PASTE EXAMPLE.JS AND MOCKDATA.JS
 //TO RUN: node example.js
@@ -13,8 +14,8 @@ import {
   arrayStrings,
   noTemplateSimpleObject,
   mDimensionsArray,
-  twoDimensionsArray
-} from "./mockData.js";
+  twoDimensionsArray,
+} from "./node_modules/osolog/mockData.js";
 
 //CONFIGURATION OBJECT
 //THE OTHER DIFFERENT OPTIONS ARE COMMENTED.
@@ -34,7 +35,7 @@ const configuration = {
   //multiarray: "defualt_table",
   //multiarray:'table',
 
-  object: "default"
+  object: "default",
   //object:'string',
   //object:'table',
 };
