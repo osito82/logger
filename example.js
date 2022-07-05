@@ -1,6 +1,9 @@
 import * as logger from "./lib/logR.js";
-import colors from "colors";
 
+//COPY AND PASTE EXAMPLE.JS AND MOCKDATA.JS
+//TO RUN: node example.js
+
+//HERE SOME MOKCS ARE IMPORTED
 import {
   jsonObject,
   objectPerson,
@@ -10,94 +13,69 @@ import {
   arrayStrings,
   noTemplateSimpleObject,
   mDimensionsArray,
-  twoDimensionsArray,
+  twoDimensionsArray
 } from "./mockData.js";
 
 //CONFIGURATION OBJECT
-const configLog = {
+//THE OTHER DIFFERENT OPTIONS ARE COMMENTED.
+//Uncommented and play with them.
+
+const configuration = {
   logger: true,
   enableColors: true,
-  //  array: "ordered",
-  //array: "default_table",
+  string_caps: false,
+
   array: "default",
-  // array:'default_table',
+  //array:'default_table',
   // array:'ordered',
 
-  string_caps: false,
-  multiarray: "custom_table",
-
+  multiarray: "default",
+  //multiarray: "custom_table",
   //multiarray: "defualt_table",
-  //multiarray:'table'
-  //  object:'default',
+  //multiarray:'table',
 
+  object: "default"
   //object:'string',
-  // object:'table',
-  // object:"brakets",
+  //object:'table',
 };
 
-const log = new logger.R(configLog);
+const log = new logger.R(configuration);
 
-log.R();
+//SIMPLE VARIABLES
+log.R(); //ERROR IS EXPECTED
 log.R(55665);
 log.R(true);
 log.R(stringExample, stringExample);
 log.R("hola", "ce");
-log.R(stringExample);
-
 log.R(null, jsonObject, arrayMixed);
 
-//log.R(objectPerson);
+//Printing colorized string
+log.Args({ colors: ["rainbow", "blue", "bgGreen"] }).R("batman forever");
 
-//console.log(['hola'])
-
-//log.R(jsonObject);
-//console.table({firstname:"John", lastname:"Doe"});
-
-log.R([
-  [1, 2, 4, 60],
-  [1, "2000", 4, 6],
-  [1, 2, "guillermo", 6],
-]);
-log.R(undefined);
-log.R([
-  [1, { casa: 5 }],
-  [2, [1, 2]],
-  [undefined, 5],
-]);
-
-//log.Args({ head: ["H1", "H2", "H3", "H4"] }).R(noTemplateSimpleObject);
-//log.Args({ head: ["H5", "H6", "H7", "H8"] }).R(noTemplateSimpleObject);
-
-//console.log('--------------------------------------------------------------------')
-log.Args({ head: ["H1", "88", "88", "88"] }).R(twoDimensionsArray);
-log.R(twoDimensionsArray);
-log.Args({ head: ["H1", "H2", "H3", "66"] }).R(twoDimensionsArray);
-//log.R(twoDimensionsArray).Args({ head: ["H1", "H2", "H3", "H4"] });
-log.R(mDimensionsArray);
-
-//todo: find a way to filter args according to the object
-
-//  log.Args({ colors: ["rainbow", "blue", "bgGreen"] }).R("batman forever");
-//log.Args({ colors: ["blue"] }).R("batman forever");
-log.R("MES DE:");
-log.Args({ colors: ["rainbow"] }).R(1111111111111111);
-log.R(22222222222222);
-log.R(arrayMixed);
-log.R(arrayNumbers);
-
-log.R(arrayStrings); //en arrays no colors
-log
-  .Args({ colors: { key: ["red", "bgWhite"], value: ["blue", "bgWhite"] } })
-  .R(objectPerson);
+//Printing regular object
 log.R(objectPerson);
 
-//log.md5('sss')
+//Printing two dimensions array
+log.R(twoDimensionsArray);
 
-log.Funcs({ name: "md5" }, "hola");
-log.R(noTemplateSimpleObject);
-//log.();
+//Printing two dimension array with headers
+log.Args({ head: ["H1", "88", "88", "88"] }).R(twoDimensionsArray);
+
+//Printing simple array
+log.R(arrayStrings);
+
+//Printing Object using colors and "Keys" Template
 log
-  .Template({
-    template: { name: "brakets", date: true, title: "objectPerson" },
-  })
+  .Args({ colors: { key: ["red", "bgWhite"], value: ["blue", "bgWhite"] } })
+  .Template({ name: "keys", date: true, title: "objectPerson" })
   .R(objectPerson);
+
+//Printing Object using colors and "Brakets" Template
+log
+  .Args({ colors: { key: ["red", "bgWhite"], value: ["blue", "bgWhite"] } })
+  .Template({ name: "brackets", date: true, title: "objectPerson" })
+  .R(objectPerson);
+
+//Using functions
+//So far only has md5 encode
+log.Funcs({ name: "md5" }, "Text to hash!");

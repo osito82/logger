@@ -1,6 +1,8 @@
 import * as misc from "../lib/misc.js";
 import _ from "lodash";
 import templatebrakets from "../templates/brakets.js";
+import templatekeys from "../templates/keys.js";
+
 
 const objectConsole = (obj, config, i, logArguments) => {
 
@@ -20,6 +22,9 @@ const objectConsole = (obj, config, i, logArguments) => {
     //USING TEMPLATES FOR OBJECTS
     else if (template.name == "brakets") {
       console.log(templatebrakets(obj[i], logArguments));
+    }
+    else if (template.name == "keys") {
+      console.log(templatekeys(obj[i], logArguments));
     }
   }
 };
