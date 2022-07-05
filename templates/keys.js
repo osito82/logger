@@ -4,16 +4,17 @@ import colors from "colors";
 
 //const RESERVED_KEYS = ["___title", "___template", "___date"];
 
-const templatebrakets = (obj, logArguments) => {
+const templatekeys = (obj, logArguments) => {
   // let template = _.get(logArguments, "template", "default");
 
   const keycolor = logArguments.colors.key;
 
   const valuecolor = logArguments.colors.value;
 
-  let date = logArguments.template.date == true ? `[${misc.getDate()}]` : "";
+  let date =
+    logArguments.template.date == true ? `"Date":"${misc.getDate()}",` : "";
   let title = !_.isEmpty(logArguments.template.title)
-    ? `[${logArguments.template.title}]`
+    ? `"title":"${logArguments.template.title}",`
     : "";
 
   let braketsContent = "";
@@ -23,27 +24,21 @@ const templatebrakets = (obj, logArguments) => {
   });
 
   for (let [key, val] of Object.entries(obj)) {
-    //  if (misc.whatTypeIs(val) == "object" | misc.whatTypeIs(val) =='number'| misc.whatTypeIs(val) =='bool' ) {
     val = JSON.stringify(val);
-    //  }
-//if (misc.whatTypeIs(val) =='number') {
-
-//} else{}
-
-
 
     if (logArguments.colors === "default") {
-      braketsContent = braketsContent + `[${key}:${val}]`;
+      braketsContent = braketsContent + `"${key}":"${val}",`;
     }
 
     if (logArguments.colors !== "default") {
-      braketsContent = braketsContent + `[${key.customKey}:${val.customValue}]`;
+      braketsContent =
+        braketsContent + `"${key.customKey}":"${val.customValue}",`;
     }
   }
 
-  let consoleOut = `${title}${date}${braketsContent}`;
+  let consoleOut = `{${title}${date}${braketsContent}}`;
 
-  return consoleOut;
+  return consoleOut.replace(/",}(\s+)?$/, "}");
 };
 
-export default templatebrakets;
+export default templatekeys;
