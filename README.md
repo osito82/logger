@@ -1,13 +1,13 @@
-# log.R
-The idea is just to extend the power of the JS console log.
+# OsoLog
+The idea is just to extend the power of the JS console.log.
 
 ## Instalation
 
 ````
-npm install --save logr
+npm install osolog
 ````
 
-### In your package.json remember to put
+### In your package.json remember to put to work with imports
 ````
 "type": "module",
 
@@ -16,7 +16,9 @@ npm install --save logr
 ## Simple usage example
 
 ```
-const log = new logger.R();
+import * as osolog from "osolog";
+
+const log = new osolog.R();
 
 log.R(ANYobject);
 ```
@@ -42,7 +44,7 @@ const configuration = {
     multiarray: "defualt_table",
 };
 
-const log = new logger.R(configuration);la
+const log = new osolog.R(configuration);la
 
 log.Args({ head: ["H1", "H2", "H3", "66"] }).R(twoDimensionsArray);
 ```

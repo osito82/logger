@@ -1,5 +1,5 @@
-import * as logger from "osolog";
-
+import * as osolog from "osolog";
+//import * as osolog from './lib/logR.js'
 
 //COPY AND PASTE EXAMPLE.JS AND MOCKDATA.JS
 //TO RUN: node example.js
@@ -15,7 +15,9 @@ import {
   noTemplateSimpleObject,
   mDimensionsArray,
   twoDimensionsArray,
-} from "./node_modules/osolog/mockData.js";
+} 
+from "./node_modules/osolog/mockData.js";
+//from './mockData.js'
 
 //CONFIGURATION OBJECT
 //THE OTHER DIFFERENT OPTIONS ARE COMMENTED.
@@ -40,7 +42,7 @@ const configuration = {
   //object:'table',
 };
 
-const log = new logger.R(configuration);
+const log = new osolog.R(configuration);
 
 //SIMPLE VARIABLES
 log.R(); //ERROR IS EXPECTED
