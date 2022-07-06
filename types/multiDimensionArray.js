@@ -1,5 +1,6 @@
-import * as misc from "../lib/misc.js";
-import Table from "cli-table2";
+var misc = require('../lib/misc.js');
+var Table = require('cli-table2')
+
 
 const multiDimensionArrayConsole = (obj, config, i, logArguments) => {
   
@@ -19,4 +20,4 @@ const multiDimensionArrayConsole = (obj, config, i, logArguments) => {
   }
 };
 
-export default multiDimensionArrayConsole;
+exports.multiDimensionArrayConsole;

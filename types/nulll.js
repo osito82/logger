@@ -1,4 +1,4 @@
-import * as misc from '../lib/misc.js'
+var misc = require('../lib/misc.js');
 
 //checking if it is a string
 const nullConsole = (obj, config, i) => {
@@ -10,4 +10,4 @@ const nullConsole = (obj, config, i) => {
   }
 };
 
-export default nullConsole;
+exports.nullConsole;

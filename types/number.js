@@ -1,5 +1,5 @@
-import * as misc from "../lib/misc.js";
-import colors from "colors";
+var misc = require('../lib/misc.js');
+var colors = require ('colors')
 
 const numberConsole = (obj, config, i, logArguments) => {
   colors.setTheme(misc.colorsToConsole(logArguments));
@@ -15,6 +15,9 @@ const numberConsole = (obj, config, i, logArguments) => {
       console.log(toStringa.custom);
     }
   }
+ // return 'hola'
 };
 
-export default numberConsole;
+
+exports.numberConsole = numberConsole
+//exports.numberConsole = numberConsole; 0021

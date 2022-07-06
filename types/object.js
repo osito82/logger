@@ -1,7 +1,11 @@
-import * as misc from "../lib/misc.js";
-import _ from "lodash";
-import templatebrakets from "../templates/brakets.js";
-import templatekeys from "../templates/keys.js";
+
+var misc = require('../lib/misc')
+const _ = require('lodash');
+
+
+const templatebrakets = require('../templates/brakets.js')
+const templatekeys = require('../templates/keys.js')
+
 
 
 const objectConsole = (obj, config, i, logArguments) => {
@@ -29,4 +33,4 @@ const objectConsole = (obj, config, i, logArguments) => {
   }
 };
 
-export default objectConsole;
+exports.objectConsole;

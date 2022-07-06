@@ -1,9 +1,9 @@
-import lodash from "lodash";
+var _ = require('lodash');
 
-export const functionIsEmpty = (object) => {
+exports.functionIsEmpty = (object) => {
   let _isEmpty = true;
   try {
-    if (lodash.isEmpty(object)) {
+    if (_.isEmpty(object)) {
       throw {
         errorMessage: "Function Log.R has no arguments"
       };

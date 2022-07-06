@@ -1,4 +1,4 @@
-import * as misc from '../lib/misc.js'
+var misc = require('../lib/misc.js');
 
 const undefinedConsole = (obj, config, i) => {
   if (misc.countNumberKeys(obj) >= 1) {
@@ -6,4 +6,4 @@ const undefinedConsole = (obj, config, i) => {
   }
 };
 
-export default undefinedConsole;
+exports.undefinedConsole = undefinedConsole;

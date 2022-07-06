@@ -1,11 +1,12 @@
-import * as osolog from "osolog";
-//import * as osolog from './lib/logR.js'
+const {osolog} = require("./lib/logR.js");
+
+//const osolog = require('osolog')
 
 //COPY AND PASTE EXAMPLE.JS AND MOCKDATA.JS
 //TO RUN: node example.js
 
 //HERE SOME MOKCS ARE IMPORTED
-import {
+const {
   jsonObject,
   objectPerson,
   stringExample,
@@ -14,10 +15,10 @@ import {
   arrayStrings,
   noTemplateSimpleObject,
   mDimensionsArray,
-  twoDimensionsArray,
-} 
-from "./node_modules/osolog/mockData.js";
-//from './mockData.js'
+  twoDimensionsArray
+} = 
+//require("./node_modules/osolog/mockData.js");
+require('./mockData.js')
 
 //CONFIGURATION OBJECT
 //THE OTHER DIFFERENT OPTIONS ARE COMMENTED.
@@ -37,12 +38,15 @@ const configuration = {
   //multiarray: "defualt_table",
   //multiarray:'table',
 
-  object: "default",
+  object: "default"
   //object:'string',
   //object:'table',
 };
+//osolog.
+//const log = new osolog.R(configuration);
+const log = new osolog .R(configuration)
+//const log = new osolog.
 
-const log = new osolog.R(configuration);
 
 //SIMPLE VARIABLES
 log.R(); //ERROR IS EXPECTED

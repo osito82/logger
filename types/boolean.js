@@ -1,4 +1,6 @@
-import * as misc from '../lib/misc.js'
+var misc = require('../lib/misc.js');
+
+
 
 const booleanConsole = (obj, config, i) => {
   if (misc.countNumberKeys(obj) >= 1) {
@@ -8,4 +10,4 @@ const booleanConsole = (obj, config, i) => {
   }
 };
 
-export default booleanConsole;
+exports.booleanConsole;

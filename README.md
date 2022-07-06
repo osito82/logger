@@ -16,7 +16,7 @@ npm install osolog
 ## Simple usage example
 
 ```
-import * as osolog from "osolog";
+const osolog = require('./lib/logR.js')
 
 const log = new osolog.R();
 

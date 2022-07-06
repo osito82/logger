@@ -1,5 +1,5 @@
-import * as misc from "../lib/misc.js";
-import colors from "colors";
+var misc = require('../lib/misc.js');
+var colors = require ('colors')
 
 const stringConsole = (obj, config, i, logArguments) => {
 
@@ -14,4 +14,6 @@ const stringConsole = (obj, config, i, logArguments) => {
   }
 };
 
-export default stringConsole;
+exports.stringConsole;
+
+
