@@ -1,7 +1,13 @@
-const {osolog} = require("./lib/logR.js");
 
+//const {R} = require("./lib/logR.js");
+//'use strict';
+
+
+  const osolog = require("./lib/logR.js").R;
+ // osolog
+//const osolog:R = require("./lib/logR.js")
 //const osolog = require('osolog')
-
+//osolog.
 //COPY AND PASTE EXAMPLE.JS AND MOCKDATA.JS
 //TO RUN: node example.js
 
@@ -44,12 +50,39 @@ const configuration = {
 };
 //osolog.
 //const log = new osolog.R(configuration);
-const log = new osolog .R(configuration)
+//const log = new R.R('5555') // Osolog(configuration)
+//const log = new R
+//const eso = osolog.R.R.R()
+//const log = new osolog.R R.R(configuration)
+
+//const advertHandler = require('./advertHandler');
+//const handler = new advertHandler({test: "one"});
+//console.log(handler.getProject('test'));
+
+
+
+
+//console.log(log, '88888888888')
+//const log = new R(configuration)
+//var log = new osolog(configuration)
+var log = osolog()
+log.R(configuration)
+//var log = new osolog(configuration)
+//var log = new osolog(configuration);
+//log.config = 
+//log.Args()
+
+
+//log.R('x')
+
+//log
+//log.R(5555)
+//log.R(5)
 //const log = new osolog.
 
 
 //SIMPLE VARIABLES
-log.R(); //ERROR IS EXPECTED
+//log.R(); //ERROR IS EXPECTED
 log.R(55665);
 log.R(true);
 log.R(stringExample, stringExample);
