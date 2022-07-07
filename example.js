@@ -3,7 +3,7 @@
 //'use strict';
 
 
-  const osolog = require("./lib/logR.js").R;
+  const osolog = require("./lib/logR.js");
  // osolog
 //const osolog:R = require("./lib/logR.js")
 //const osolog = require('osolog')
@@ -34,7 +34,7 @@ const configuration = {
   logger: true,
   enableColors: true,
   string_caps: false,
-
+xxx:'456',
   array: "default",
   //array:'default_table',
   // array:'ordered',
@@ -65,8 +65,8 @@ const configuration = {
 //console.log(log, '88888888888')
 //const log = new R(configuration)
 //var log = new osolog(configuration)
-var log = osolog()
-log.R(configuration)
+const log = new osolog(configuration)
+log.R('x')
 //var log = new osolog(configuration)
 //var log = new osolog(configuration);
 //log.config = 

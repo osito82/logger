@@ -8,12 +8,16 @@ const objectConsole = require("../types/object.js");
 const undefinedConsole = require("../types/undefined.js");
 
 //0021 module.exports = {
-exports.arrayConsole = arrayConsole;
-exports.stringConsole = stringConsole;
-exports.nullConsole = nullConsole;
-exports.numberConsole = numberConsole;
-exports.booleanConsole = booleanConsole;
-exports.objectConsole = objectConsole;
-exports.multiDimensionArrayConsole = multiDimensionArrayConsole;
-exports.undefinedConsole = undefinedConsole;
+
+module.exports = {
+  arrayConsole,
+  stringConsole,
+  nullConsole,
+  numberConsole,
+  booleanConsole,
+  objectConsole,
+  multiDimensionArrayConsole,
+  undefinedConsole
+};
+
 //};

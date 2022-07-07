@@ -1,6 +1,6 @@
-var misc = require('../lib/misc')
-var _ = require('lodash');
-var colors = require ('colors')
+var misc = require("../lib/misc");
+var _ = require("lodash");
+var colors = require("colors");
 
 //const RESERVED_KEYS = ["___title", "___template", "___date"];
 
@@ -39,4 +39,4 @@ const templatebrakets = (obj, logArguments) => {
   return consoleOut;
 };
 
-exports.templatebrakets= templatebrakets;
+module.exports = templatebrakets;

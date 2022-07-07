@@ -13,4 +13,4 @@ const stringConsole = (obj, config, i, logArguments) => {
   }
 };
 
-exports.stringConsole = stringConsole;
+module.exports = stringConsole;

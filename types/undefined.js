@@ -6,4 +6,4 @@ const undefinedConsole = (obj, config, i) => {
   }
 };
 
-exports.undefinedConsole = undefinedConsole;
+module.exports = undefinedConsole;

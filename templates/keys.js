@@ -37,4 +37,4 @@ const templatekeys = (obj, logArguments) => {
   return consoleOut.replace(/",}(\s+)?$/, "}");
 };
 
-exports.templatekeys;
+module.exports=templatekeys;

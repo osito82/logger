@@ -17,4 +17,4 @@ const numberConsole = (obj, config, i, logArguments) => {
   }
 };
 
-exports.numberConsole = numberConsole;
+module.exports = numberConsole;

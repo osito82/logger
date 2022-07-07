@@ -10,4 +10,4 @@ const nullConsole = (obj, config, i) => {
   }
 };
 
-exports.nullConsole;
+module.exports=nullConsole;

@@ -20,4 +20,4 @@ const multiDimensionArrayConsole = (obj, config, i, logArguments) => {
   }
 };
 
-exports.multiDimensionArrayConsole;
+module.exports = multiDimensionArrayConsole;
