@@ -7,8 +7,6 @@ const nullConsole = require("../types/nulll");
 const objectConsole = require("../types/object.js");
 const undefinedConsole = require("../types/undefined.js");
 
-//0021 module.exports = {
-
 module.exports = {
   arrayConsole,
   stringConsole,
@@ -19,5 +17,3 @@ module.exports = {
   multiDimensionArrayConsole,
   undefinedConsole
 };
-
-//};

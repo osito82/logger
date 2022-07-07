@@ -15,7 +15,8 @@ const {
 } = require("./mockData.js");
 
 
-const log = new osolog.R();
+
+const log = new osolog();
 
 
 log.R(objectPerson);
