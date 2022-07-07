@@ -7,18 +7,12 @@ The idea is just to extend the power of the JS console.log.
 npm install osolog
 ````
 
-### In your package.json remember to put to work with imports
-````
-"type": "module",
-
-````
-
 ## Simple usage example
 
 ```
-import * as osolog from "osolog";
+const osolog = require('osolog')
 
-const log = new osolog.R();
+const log = new osolog();
 
 log.R(ANYobject);
 ```
@@ -88,8 +82,6 @@ log.Args({ head: ["H1", "H2", "H3", "66"] }).R(twoDimensionsArray);
 **string:** Prints out the object using JSON.stringify.
 
 
-
-
 ## TEMPLATES 
 
 Templates for objects. It is very useful to use with Splunk for instance.
@@ -108,7 +100,6 @@ So far there are only two templates.
 ````
 
 ## COLORIZE
-
 
 You can only colorize strings alone and objects using templates.
 

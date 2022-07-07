@@ -1,6 +1,6 @@
-import * as misc from "../lib/misc.js";
-import _ from "lodash";
-import colors from "colors";
+var misc = require("../lib/misc");
+var _ = require("lodash");
+var colors = require("colors");
 
 //const RESERVED_KEYS = ["___title", "___template", "___date"];
 
@@ -39,4 +39,4 @@ const templatebrakets = (obj, logArguments) => {
   return consoleOut;
 };
 
-export default templatebrakets;
+module.exports = templatebrakets;

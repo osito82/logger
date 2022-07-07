@@ -1,6 +1,6 @@
 //This file only contains some mocks 
 
-export const noTemplateSimpleObject = {
+exports.noTemplateSimpleObject = {
   name: "Bob",
   lastname: "Patino",
   age: 45,
@@ -14,7 +14,7 @@ export const noTemplateSimpleObject = {
   website: "https://www.yahoo.com"
 };
 
-export const objectPerson = {
+exports.objectPerson = {
   name: "Mario",
   lastname: "Soto",
   bool:true,
@@ -28,19 +28,19 @@ export const objectPerson = {
   website: "https://www.yahoo.com"
 };
 
-export const jsonObject = {
+exports.jsonObject = {
   name: "Mario",
   named_object: { name: "guillermo", phone: "678-555-8888" },
   lastname: "Hernandez",
   age: 45
 };
 
-export const stringExample = "I am an string";
-export const arrayNumbers = [
+exports.stringExample = "I am an string";
+exports.arrayNumbers = [
   10, 58, 566, 454, 1, 85002, 125, 45, 798, 69510, 58, 566, 454, 1, 85002, 125,
   45, 798, 695
 ];
-export const arrayStrings = [
+exports.arrayStrings = [
   "cat",
   "dog",
   "horse",
@@ -51,7 +51,7 @@ export const arrayStrings = [
   "ant",
   "bird"
 ];
-export const arrayMixed = [
+exports.arrayMixed = [
   15154,
   "Costa Rica",
   6595959,
@@ -59,7 +59,8 @@ export const arrayMixed = [
   5594598458,
   "Honduras"
 ];
-export const mDimensionsArray = [
+
+exports.mDimensionsArray = [
   ["0, 0", "1, 0", "2, 0", "3, 0", "4, 0"],
   ["0, 1", "1, 1", "2, 1", "3, 1", "4, 1"],
   ["0, 2", "1, 2", "2, 2", "3, 2", "4, 2"],
@@ -67,7 +68,7 @@ export const mDimensionsArray = [
   ["0, 4", "1, 4", "2, 4", "3, 4", "4, 4"]
 ];
 
-export const twoDimensionsArray = [
+exports.twoDimensionsArray = [
   [1, 2, 4, 60],
   [1, "2000", 4, 6],
   [1, 2, "cat", 6]

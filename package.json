@@ -1,10 +1,10 @@
 {
   "name": "osolog",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "It's just a console log extension",
   "main": "lib/logR.js",
   "bin": "lib/logR.js",
-  "type": "module",
+
   "scripts": {
     "test": "test"
   },

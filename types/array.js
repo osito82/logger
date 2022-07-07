@@ -1,4 +1,4 @@
-import * as misc from "../lib/misc.js";
+var misc = require('../lib/misc.js');
 
 const arrayConsole = (obj, config = {}, i) => {
   if (
@@ -16,4 +16,6 @@ const arrayConsole = (obj, config = {}, i) => {
   }
 };
 
-export default arrayConsole;
+
+
+module.exports = arrayConsole;

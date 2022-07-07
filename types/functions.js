@@ -1,13 +1,13 @@
-import arrayConsole from "./array.js";
-import stringConsole from "./string.js";
-import numberConsole from './number.js'
-import booleanConsole from './boolean.js'
-import multiDimensionArrayConsole from "./multiDimensionArray.js"
-import nullConsole from './nulll.js'
-import objectConsole from './object.js'
-import undefinedConsole from './undefined.js'
+const arrayConsole = require("../types/array.js");
+const stringConsole = require("../types/string.js");
+const numberConsole = require("../types/number.js");
+const booleanConsole = require("../types/boolean.js");
+const multiDimensionArrayConsole = require("./multiDimensionArray.js");
+const nullConsole = require("../types/nulll");
+const objectConsole = require("../types/object.js");
+const undefinedConsole = require("../types/undefined.js");
 
-export default {
+module.exports = {
   arrayConsole,
   stringConsole,
   nullConsole,
