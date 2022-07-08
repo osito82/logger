@@ -1,8 +1,7 @@
-import * as misc from "../lib/misc.js";
-import colors from "colors";
+var misc = require("../lib/misc.js");
+var colors = require("colors");
 
 const stringConsole = (obj, config, i, logArguments) => {
-
   colors.setTheme(misc.colorsToConsole(logArguments));
 
   if (misc.countNumberKeys(obj) >= 1) {
@@ -14,4 +13,4 @@ const stringConsole = (obj, config, i, logArguments) => {
   }
 };
 
-export default stringConsole;
+module.exports = stringConsole;

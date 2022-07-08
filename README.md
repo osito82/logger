@@ -1,16 +1,18 @@
-# log.R
-The idea is just to extend the power of the JS console log.
+# OsoLog
+The idea is just to extend the power of the JS console.log.
 
 ## Instalation
 
 ````
-npm install --save logr
+npm install osolog
 ````
 
 ## Simple usage example
 
 ```
-const log = new logger.R();
+const osolog = require('osolog')
+
+const log = new osolog();
 
 log.R(ANYobject);
 ```
@@ -36,7 +38,7 @@ const configuration = {
     multiarray: "defualt_table",
 };
 
-const log = new logger.R(configuration);la
+const log = new osolog.R(configuration);la
 
 log.Args({ head: ["H1", "H2", "H3", "66"] }).R(twoDimensionsArray);
 ```
@@ -80,8 +82,6 @@ log.Args({ head: ["H1", "H2", "H3", "66"] }).R(twoDimensionsArray);
 **string:** Prints out the object using JSON.stringify.
 
 
-
-
 ## TEMPLATES 
 
 Templates for objects. It is very useful to use with Splunk for instance.
@@ -100,7 +100,6 @@ So far there are only two templates.
 ````
 
 ## COLORIZE
-
 
 You can only colorize strings alone and objects using templates.
 

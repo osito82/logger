@@ -1,9 +1,10 @@
 {
-  "name": "logger",
-  "version": "1.0.0",
+  "name": "osolog",
+  "version": "1.0.4",
   "description": "It's just a console log extension",
-  "main": "index.js",
-  "type": "module",
+  "main": "lib/logR.js",
+  "bin": "lib/logR.js",
+
   "scripts": {
     "test": "test"
   },
@@ -23,7 +24,7 @@
   },
   "homepage": "https://github.com/osito82/logger#readme",
   "devDependencies": {
-    "eslint": "^8.18.0"
+
   },
   "dependencies": {
     "cli-table2": "^0.2.0",

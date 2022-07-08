@@ -1,6 +1,6 @@
-import * as misc from "../lib/misc.js";
-import _ from "lodash";
-import colors from "colors";
+var misc = require('../lib/misc')
+var _ = require('lodash');
+var colors = require ('colors')
 
 const templatekeys = (obj, logArguments) => {
   const keycolor = logArguments.colors.key;
@@ -37,4 +37,4 @@ const templatekeys = (obj, logArguments) => {
   return consoleOut.replace(/",}(\s+)?$/, "}");
 };
 
-export default templatekeys;
+module.exports=templatekeys;

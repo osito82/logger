@@ -1,10 +1,11 @@
-import * as logger from "./lib/logR.js";
+const osolog = require("./lib/logR.js");
+//const osolog = require("osolog");
 
 //COPY AND PASTE EXAMPLE.JS AND MOCKDATA.JS
 //TO RUN: node example.js
 
 //HERE SOME MOKCS ARE IMPORTED
-import {
+const {
   jsonObject,
   objectPerson,
   stringExample,
@@ -14,7 +15,9 @@ import {
   noTemplateSimpleObject,
   mDimensionsArray,
   twoDimensionsArray
-} from "./mockData.js";
+} = 
+//require("./node_modules/osolog/mockData.js");
+require('./mockData.js')
 
 //CONFIGURATION OBJECT
 //THE OTHER DIFFERENT OPTIONS ARE COMMENTED.
@@ -24,7 +27,6 @@ const configuration = {
   logger: true,
   enableColors: true,
   string_caps: false,
-
   array: "default",
   //array:'default_table',
   // array:'ordered',
@@ -39,14 +41,15 @@ const configuration = {
   //object:'table',
 };
 
-const log = new logger.R(configuration);
+const log = new osolog(configuration)
+
 
 //SIMPLE VARIABLES
 log.R(); //ERROR IS EXPECTED
 log.R(55665);
 log.R(true);
 log.R(stringExample, stringExample);
-log.R("hola", "ce");
+log.R("THIS", "WORKS");
 log.R(null, jsonObject, arrayMixed);
 
 //Printing colorized string

@@ -1,7 +1,8 @@
-import * as logger from "./lib/logR.js";
-import colors from "colors";
 
-import {
+const osolog = require('./lib/logR.js')
+var colors = require ('colors')
+
+const {
   jsonObject,
   objectPerson,
   stringExample,
@@ -11,10 +12,11 @@ import {
   noTemplateSimpleObject,
   mDimensionsArray,
   twoDimensionsArray
-} from "./mockData.js";
+} = require("./mockData.js");
 
 
-const log = new logger.R();
+
+const log = new osolog();
 
 
 log.R(objectPerson);
