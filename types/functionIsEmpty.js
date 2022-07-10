@@ -1,6 +1,7 @@
 var _ = require('lodash');
 
 exports.functionIsEmpty = (object) => {
+  console.log('-------', object)
   let _isEmpty = true;
   try {
     if (_.isEmpty(object)) {

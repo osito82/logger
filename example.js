@@ -81,9 +81,9 @@ log
 
 //Using functions
 //So far only has md5 encode
+//log.R('texttoMD5');
+log.Funcs('nameOfFunction', "sh!", 'console2').R();
 
-var texttoMD5 = log.Funcs("md5", "Text to ha22sh!")
-log.R(texttoMD5);
 
 
 //log.Funcs({ name: "test" }, "Text to hash!");
