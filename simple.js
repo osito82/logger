@@ -1,6 +1,5 @@
-
-const osolog = require('./lib/logR.js')
-var colors = require ('colors')
+const osolog = require("./lib/logR.js");
+var colors = require("colors");
 
 const {
   jsonObject,
@@ -14,12 +13,6 @@ const {
   twoDimensionsArray
 } = require("./mockData.js");
 
-
-
 const log = new osolog();
 
-
 log.R(objectPerson);
-
-
-

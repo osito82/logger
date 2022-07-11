@@ -1,4 +1,5 @@
-var _ = require('lodash');
+var _ = require("lodash");
+const misc = require("../lib/misc");
 
 exports.functionIsEmpty = (object) => {
   let _isEmpty = true;
@@ -12,8 +13,7 @@ exports.functionIsEmpty = (object) => {
     }
   } catch (e) {
     console.log(e);
+  } finally {
+    return _isEmpty;
   }
-  finally {
-    return _isEmpty
-  }
-}; 
+};

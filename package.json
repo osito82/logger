@@ -1,6 +1,6 @@
 {
   "name": "osolog",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "It's just a console log extension",
   "main": "lib/logR.js",
   "bin": "lib/logR.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/osito82/logger.git"
+    "url": "git+https://github.com/osito82/osolog.git"
   },
   "keywords": [
     "logger",
@@ -20,9 +20,9 @@
   "author": "Guillermo Salazar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/osito82/logger/issues"
+    "url": "https://github.com/osito82/osolog/issues"
   },
-  "homepage": "https://github.com/osito82/logger#readme",
+  "homepage": "https://github.com/osito82/osolog#readme",
   "devDependencies": {
 
   },
