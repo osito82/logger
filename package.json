@@ -1,10 +1,9 @@
 {
   "name": "osolog",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "It's just a console log extension",
   "main": "lib/logR.js",
   "bin": "lib/logR.js",
-
   "scripts": {
     "test": "test"
   },
@@ -23,11 +22,8 @@
     "url": "https://github.com/osito82/osolog/issues"
   },
   "homepage": "https://github.com/osito82/osolog#readme",
-  "devDependencies": {
-
-  },
   "dependencies": {
-    "cli-table2": "^0.2.0",
+    "cli-table3": "^0.6.3",
     "colors": "^1.4.0",
     "lodash": "^4.17.21"
   }

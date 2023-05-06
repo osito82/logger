@@ -63,7 +63,7 @@ log.Args({ head: ["H1", "H2", "H3", "66"] }).R(twoDimensionsArray);
 | multiarray     |                    |                                                                                                        |
 |                | **default:**       | Prints out the multidimensional array, as default.                                                     |
 |                | **default_table:** | Prints out the multidimensional array as a table on screen. Uses default table from console.log        |
-|                | **custom_table:**  | Prints out the multidimensional array as a table on screen. Max 2 dimensions. Uses cli-table2 library. |
+|                | **custom_table:**  | Prints out the multidimensional array as a table on screen. Max 2 dimensions. Uses cli-table3 library. |
 | Objects        |                    |                                                                                                        |
 |                | **default:**       | Prints out the object, as default.                                                                     |
 |                | **default_table:** | Prints out the object as a table on screen. Uses default table from console.log                        |
